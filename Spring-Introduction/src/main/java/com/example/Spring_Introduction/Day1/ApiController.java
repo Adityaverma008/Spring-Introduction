@@ -12,5 +12,10 @@ public class ApiController {
         return "Hello from BridgeLabz";
     }
 
+    //Make REST Call to show Hello {name} from BridgeLabz
+    @GetMapping("/hello/query")
+    public String query(@RequestParam("name") String name){
+        return "Hello "+name+" from Bridgelabz";
+    }
 
 }
