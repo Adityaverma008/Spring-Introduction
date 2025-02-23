@@ -24,6 +24,10 @@ public class ApiController {
         return "Hello "+name+" from Bridgelabz";
     }
 
-    
+    @PostMapping("/hello/post")
+    public String greetUser(@RequestBody User user) {
+        return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
+    }
+
 
 }
