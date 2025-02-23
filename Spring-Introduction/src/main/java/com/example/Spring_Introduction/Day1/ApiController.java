@@ -18,4 +18,12 @@ public class ApiController {
         return "Hello "+name+" from Bridgelabz";
     }
 
+    // Make REST Call to show Hello {name} from BridgeLabz as path variable
+    @GetMapping("/hello/param/{name}")
+    public String hello(@PathVariable String name) {
+        return "Hello "+name+" from Bridgelabz";
+    }
+
+    
+
 }
